@@ -8,7 +8,7 @@ import cors from "cors";
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:4200',
+    origin: ['https://fora-ws.pl','http://localhost:4200'],
     methods: ['GET', 'POST'],
     credentials: true
 }));
