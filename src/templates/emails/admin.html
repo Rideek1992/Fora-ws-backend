@@ -1,0 +1,132 @@
+<h2 style="margin: 20px auto; color:#111827; text-align:center;">
+    Nowe zapytanie <p>nr: {{informationCode}}</p>
+</h2>
+<p style="text-align: center"><strong>dotyczy tematu:</strong>
+    {{RequestInfo.conversationElement}}</p>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;">
+    <tr>
+        <td style="background:#111827; color:#ffffff; padding:12px; font-weight:bold;">
+            Dane kontaktowe
+        </td>
+        <td style="background:#f3f4f6; padding:12px; text-align:right;">
+            Sposób kontaktu: <strong>{{ContactInfo.preferredContact}}</strong>
+        </td>
+    </tr>
+</table>
+
+<table width="100%" cellpadding="8" cellspacing="0" border="0" style="border-collapse: collapse;">
+    <tr>
+        <td style="font-weight:bold; width:25%; background:#f9fafb;">
+            Imię:
+        </td>
+        <td style="width:25%;">
+            {{ContactInfo.firstName}}
+        </td>
+        
+        <td style="font-weight:bold; width:25%; background:#f9fafb;">
+            Nazwisko:
+        </td>
+        <td style="width:25%;">
+            {{ContactInfo.lastName}}
+        </td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight:bold; background:#f9fafb;">
+            Email:
+        </td>
+        <td colspan="3">
+            {{ContactInfo.emailAddress}}
+        </td>
+    
+    </tr>
+    <tr>
+        <td style="font-weight:bold; background:#f9fafb;">
+            Telefon:
+        </td>
+        <td colspan="3">
+            {{ContactInfo.phoneNumber}}
+        </td>
+    </tr>
+    <tr>
+        <td style="font-weight:bold; background:#f9fafb;">
+            Stanowiska:
+        </td>
+        <td colspan="3">
+            {{ContactInfo.position}}
+        </td>
+    </tr>
+</table>
+<hr style="border:none; border-top:1px solid #e5e7eb; margin:20px 0;" />
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;">
+    <tr>
+        <td style="background:#111827; color:#ffffff; padding:12px; font-weight:bold;">
+            Dane firmy
+        </td>
+        <td style="background:#f3f4f6; padding:12px; text-align:right;">
+            Rodzaj firmy: <strong>{{CompanyInfo.industry}}</strong>
+        </td>
+       
+    </tr>
+</table>
+
+<table width="100%" cellpadding="8" cellspacing="0" border="0" style="border-collapse: collapse;">
+    <tr>
+        <td style="font-weight:bold; width:25%; background:#f9fafb;">
+            Nazwa firmy:
+        </td>
+        <td style="width:25%;">
+            {{CompanyInfo.nameCompany}}
+        </td>
+        
+        <td style="font-weight:bold; width:25%; background:#f9fafb;">
+            Wielkość fimry:
+        </td>
+        <td style="width:25%;">
+            {{CompanyInfo.companySize}}
+        </td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight:bold; width:25%; background:#f9fafb;">
+            Województwo:
+        </td>
+        <td style="width:25%;">
+            {{CompanyInfo.region}}
+        </td>
+        
+        <td style="font-weight:bold; width:25%; background:#f9fafb;">
+            Miasto:
+        </td>
+        <td style="width:25%;">
+            {{CompanyInfo.city}}
+        </td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight:bold; width:25%; background:#f9fafb;">
+            Kod pocztowy:
+        </td>
+        <td style="width:25%;">
+            {{CompanyInfo.postCode}}
+        </td>
+        
+        <td style="font-weight:bold; width:25%; background:#f9fafb;">
+            Kraj:
+        </td>
+        <td style="width:25%;">
+            {{CompanyInfo.country}}
+        </td>
+    </tr>
+    <tr>
+    
+    </tr>
+</table>
+<hr style="border:none; border-top:1px solid #e5e7eb; margin:20px 0;" />
+
+<h2>Wiadomość:</h2>
+
+<p style="font-size:14px; line-height:1.6; color:#374151;">
+    {{RequestInfo.message}}
+</p>

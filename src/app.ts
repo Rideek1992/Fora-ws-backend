@@ -1,12 +1,22 @@
-// @ts-ignore
+
 import express from 'express';
+import router from "./routes/index";
+import helmet from "helmet";
+import cors from "cors";
+
 
 const app = express();
 
+app.use(cors({
+    origin: 'http://localhost:4200',
+    methods: ['GET', 'POST'],
+    credentials: true
+}));
+
 app.use(express.json());
 
-app.get('/api/health', (_, res) => res.send('OK'))
+app.use(helmet());
 
-
+app.use('/api', router);
 
 export default app;

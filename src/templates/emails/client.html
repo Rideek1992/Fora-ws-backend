@@ -1,0 +1,97 @@
+<h2 style="margin-top:0; color:#111827;">
+    Potwierdzenie przyjęcia zapytania
+</h2>
+
+<p style="font-size:14px; color:#374151;">
+    Panie/Pani <strong>{{ContactInfo.firstName}} {{ContactInfo.lastName}}</strong>,
+</p>
+
+<p style="font-size:14px; color:#374151; line-height:1.6;">
+    Dziękujemy za przesłanie zapytania dotyczącego
+    <strong>{{RequestInfo.conversationElement}}</strong>.
+</p>
+
+<p style="font-size:14px; color:#374151;">
+    Numer Państwa zapytania:
+</p>
+
+<p style="font-size:20px; font-weight:bold; color:#111827; margin:5px 0 15px 0;">
+    {{informationCode}}
+</p>
+
+<p style="font-size:14px; color:#374151; line-height:1.6;">
+    Zapytanie zostało przyjęte i jest obecnie analizowane przez nasz zespół.
+    Odpowiemy najszybciej jak to możliwe.
+</p>
+
+<p style="font-size:14px; color:#374151; line-height:1.6;">
+    Skontaktujemy się z Państwem wykorzystując wybraną metodę kontaktu:
+    <strong>{{ContactInfo.preferredContact}}</strong>.
+</p>
+
+<hr style="border:none; border-top:1px solid #e5e7eb; margin:25px 0;" />
+
+<h3 style="margin-bottom:10px; color:#111827;">
+    Dane kontaktowe
+</h3>
+
+<table width="100%" cellpadding="8" cellspacing="0" border="0"
+       style="border:1px solid #e5e7eb; border-collapse:collapse; font-size:14px;">
+    
+    <tr>
+        <td style="font-weight:bold; background:#f9fafb; width:30%; border-bottom:1px solid #e5e7eb;">
+            Imię:
+        </td>
+        <td style="border-bottom:1px solid #e5e7eb;">
+            {{ContactInfo.firstName}}
+        </td>
+        
+        <td style="font-weight:bold; background:#f9fafb; width:30%; border-bottom:1px solid #e5e7eb;">
+            Nazwisko:
+        </td>
+        <td style="border-bottom:1px solid #e5e7eb;">
+            {{ContactInfo.lastName}}
+        </td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight:bold; background:#f9fafb; border-bottom:1px solid #e5e7eb;">
+            Email:
+        </td>
+        <td colspan="3" style="border-bottom:1px solid #e5e7eb;">
+            {{ContactInfo.emailAddress}}
+        </td>
+    </tr>
+    
+    {{#if ContactInfo.phoneNumber}}
+    <tr>
+        <td style="font-weight:bold; background:#f9fafb;">
+            Telefon:
+        </td>
+        <td colspan="3">
+            {{ContactInfo.phoneNumber}}
+        </td>
+    </tr>
+    {{/if}}
+
+</table>
+
+<p style="margin-top:25px; font-size:14px; color:#374151;">
+    Jeżeli sprawa jest pilna, mogą Państwo skontaktować się z nami bezpośrednio:
+</p>
+
+<p style="font-size:14px; color:#111827; line-height:1.6;">
+    Telefon: <strong>+48 507 187 527</strong><br/>
+    Email: <strong>kontakt@fora-ws.pl</strong>
+</p>
+
+<p style="margin-top:20px; font-size:14px;">
+    Więcej informacji znajdą Państwo na naszej stronie:
+</p>
+
+<p>
+    <a href="https://fora-ws.pl"
+       style="display:inline-block; padding:12px 22px; background:#111827; color:#ffffff; text-decoration:none; border-radius:4px; font-size:14px;">
+        Przejdź do strony
+    </a>
+</p>
